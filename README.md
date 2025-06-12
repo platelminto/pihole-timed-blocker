@@ -108,9 +108,9 @@ Run the block command from your host machine's terminal:
 ```
 sudo docker exec pihole /usr/local/bin/custom_scripts/block_sites.sh
 ```
-To check if it worked, you can use the `dig` command, pointing it directly at your Pi-hole's IP address. The response should be `0.0.0.0`.
+To check if it worked, you can use the `dig` command, pointing it directly at your Pi-hole's Tailscale IP address. The response should be `0.0.0.0`.
 ```
-# Replace <your_pi_ip> with your Raspberry Pi's IP address
+# Replace <your_pi_ip> with your Raspberry Pi's Tailscale IP address
 dig youtube.com @<your_pi_ip>
 ```
 Alternatively, check the "Domains" page in your Pi-hole web UI. You should see the domains listed as "Wildcard blocking".
