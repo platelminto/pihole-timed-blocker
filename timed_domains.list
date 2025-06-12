@@ -1,0 +1,8 @@
+# Timed Blocklist - One domain per line.
+# Comments and blank lines are ignored.
+
+youtube.com
+# tiktok.com
+# facebook.com
+instagram.com
+# reddit.com
