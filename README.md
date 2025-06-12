@@ -22,8 +22,8 @@ But really, my thesis deadline is fast approaching, so I worked on this all day 
 #### A. Clone the Repository
 Clone this repository onto your host machine.
 ```
-git clone https://github.com/platelminto/pihole-timed-blocker.git
-cd pihole-timed-blocker
+git clone https://github.com/platelminto/pihole-timed-blacklist.git
+cd pihole-timed-blacklist
 ```
 #### B. Set File Permissions
 After cloning, you must make the scripts executable.
@@ -46,7 +46,7 @@ Before deploying, customize the configuration to your needs.
 This method works directly with the `docker-compose.yml` file in this repository.
 1.  Navigate to the project directory:
     ```
-    cd ~/pihole-timed-blocker/
+    cd ~/pihole-timed-blacklist/
     ```
 2.  Deploy the stack:
     ```
