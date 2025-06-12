@@ -1,11 +1,11 @@
 # pihole-timed-blacklist
 A project to deploy a Pi-hole instance, with a cron-based system for blocking specific domains during set hours. Set the Pi as your Tailscale network's DNS resolver and this'll work automatically, across devices, across networks. See the end of this guide for more on that.
 
-I made this to spend less time on social media. I already bought a phone where accessing them is a hassle, but I noticed my usage on my other devices increased. This aims to change that!
+I made this to spend less time on social media. I already bought a phone where accessing them is a hassle, but I noticed my usage on my other devices increased. This aims to change that! It also would work on a smartphone if you do have one, since it's DNS.
 
 ## Why this instead of X?
 * **Why not use most routers' existing domain blacklist functionality?** Most have time-based blocking, but not all. Also, not a solution for when you leave your home network.
-* **Why not use a browser extension?** It does not take a lot of clicks to disable an extension. Or use a different browser. I know, it's easy to disable Pi-hole too, but I think the friction is slightly higher - plus, you're disabling your Pi-hole! Many extensions also sell your data to advertisers, or eventually do. I wanted to avoid that. Also, here it's set-once-and-forget, thanks to Tailscale.
+* **Why not use a browser extension?** This blocks your phone apps too! Also, it does not take a lot of clicks to disable an extension. Or use a different browser. I know, it's easy to disable Pi-hole too, but I think the friction is slightly higher - plus, you're disabling your Pi-hole! Many extensions also sell your data to advertisers, or eventually do. I wanted to avoid that.
 
 But really, my thesis deadline is fast approaching, so I worked on this all day rather than go to the library.
 
@@ -139,3 +139,7 @@ Once you've confirmed the scripts work, set up the schedule.
 ## Step 6: Maintenance
 *   **To change which domains are blocked:** Edit the `timed_domains.list` file in the project directory.
 *   **To change the block/unblock times:** Edit the schedule by running `sudo crontab -e`.
+
+
+## Planned features
+* [ ] Easier separate times per domain
