@@ -1,0 +1,9 @@
+# This is the central list of domains for timed blocking.
+# Edit this file only. Both the block and unblock scripts will read from here.
+# Use standard shell array format: ( "domain1.com" "domain2.com" )
+
+DOMAINS=(
+    "youtube.com"
+    "instagram.com"
+)
+
